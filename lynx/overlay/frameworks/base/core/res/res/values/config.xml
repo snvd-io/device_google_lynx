@@ -32,6 +32,15 @@
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">6</integer>
 
+     <!-- Default strength, in percentage, of bright color reduction when activated. -->
+    <integer name="config_reduceBrightColorsStrengthDefault">35</integer>
+
+    <!-- Minimum strength, in percentage, supported by bright color reduction. -->
+    <integer name="config_reduceBrightColorsStrengthMin">25</integer>
+
+    <!-- Maximum strength, in percentage, supported by bright color reduction. -->
+    <integer name="config_reduceBrightColorsStrengthMax">50</integer>
+
     <!-- Minimum screen brightness setting allowed by power manager.
          The user is forbidden from setting the brightness below this level.  -->
     <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0</item>
@@ -313,7 +322,4 @@
     <!-- Boolean indicating whether allow sending null to modem to clear the previous initial attach
          data profile -->
     <bool name="allow_clear_initial_attach_data_profile">true</bool>
-
-    <!-- The integer index of the selected option in config_udfps_touch_detection_options -->
-    <integer name="config_selected_udfps_touch_detection">6</integer>
 </resources>
